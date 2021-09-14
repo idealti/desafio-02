@@ -1,0 +1,17 @@
+{
+  "name": "idealti-desafio-02",
+  "version": "1.0.0",
+  "description": "Implementação do Desafio 02",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/idealti/desafio-02.git",
+    "type": "git"
+  },
+  "author": "Your Name <you@example.com>",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "prestart": "yarn install",
+    "start": "yarn build",
+    "build": "echo building..."
+  }
+}
