@@ -1,7 +1,7 @@
 # Desafio 02
 
 Bem-vindo ao Desafio n° 02 da [Ideal](http://www.tideal.com.br/). Esse repositório ficará disponível para receber o seu 
-PR até `2021-10-31T23:59:59-03:00`. Então não demore para enviar o seu PR.
+PR até `2021-10-31T23:59:59-03:00`.
 
 ### Objetivo
 
@@ -15,7 +15,7 @@ Abaixo temos um exemplo da ferramenta de consulta do Banco Central, você també
 
 ![ferramenta-consulta](consulta-taxa-selic.png)
 
-Nós disponibilizamos um arquivo [**JSON**](proposta/seu-nome/data.json) com as informações no período de 01/01/2010 à 
+Nós disponibilizamos um arquivo [**JSON**](proposta/seu-nome/data.json) com as informações no período de 01/01/2010 a 
 01/01/2020, conforme a pesquisa na ferramenta.
 
 ### Proposta
@@ -29,7 +29,7 @@ data (DD/MM) do ano em anos específicos. **Para então** analisar e poder preen
 - **Deve** ser possível consultar a taxa SELIC a partir de um período informado.
 - **Deve** ser possível consultar a taxa SELIC a partir de uma data específica em um ano;
 - **Deve** ser possível consultar a taxa SELIC a partir de uma data específica entre um ou mais anos;
-- **Deve** exibir uma notificação caso a data ou período informado estiver fora do range 01/01/2010 à 01/01/2020;
+- **Deve** exibir uma notificação caso a data ou período informado estiver fora do range 01/01/2010 a 01/01/2020;
 - **Não deve** ser possível inserir caracteres **não numéricos** na data ou período;
 
 ### Critérios de Aceite
@@ -60,6 +60,7 @@ data (DD/MM) do ano em anos específicos. **Para então** analisar e poder preen
 
 ### Bônus
 
+- Implemente as funcionalidade de exportar e imprimir;
 - Utilizar alguma ferramenta de teste, unitária, funcional, integração ou e2e;
 - Integrar o projeto com alguma ferramenta de CI;
 
