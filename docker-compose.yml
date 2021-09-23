@@ -5,13 +5,13 @@ services:
     container_name: frontend-desafio-02
     working_dir: /application
     volumes:
-      - ./proposta/seu-nome:/application
+      - ./proposta/herickCamara/front-end:/application
     command: ["yarn","start"]
 
   webserver:
     image: nginx:1.17.0
     container_name: webserver-desafio-02
     volumes:
-      - ./proposta/seu-nome/public:/usr/share/nginx/html:ro
+      - ./proposta/herickCamara/:/usr/share/nginx/html:ro
     ports:
       - "8080:80"
