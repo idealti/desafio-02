@@ -12,7 +12,7 @@ Quando me propuseram este desafio, confeso que estava com receio, pois não tinh
 <br>
 <p>Segui a lógica propósta, porém fiz algumas mudanças no Layout, esse foi o resultado final</p>
 <br>
-<img src="">
+<img src="./projetoFinal.png">
 <br>
 <h2>Tecnologias Usadas:</h2><br>
 <h3>Front-end</h3>

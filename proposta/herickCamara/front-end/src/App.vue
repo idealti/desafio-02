@@ -4,7 +4,7 @@
         <aside>
           <div class="input">
           <input type="date" lang="pt-br" v-model="startData" />
-          <input type="date" v-model="endData" />
+          <input type="date" v-model="endData"   />
 
           </div>
           <div class="button">
@@ -45,7 +45,7 @@ export default {
     //======================= Consumindo api json============================
     getJSON1(){
        Registros.lista()
-        .then((res) => this.allData = res.data).then(console.log)        
+        .then((res) => this.allData = res.data).then(r=> this.registros = r.registros)      
     },
 //=========================== function ==================================
     Filter(){
@@ -79,9 +79,8 @@ export default {
           end = this.converteData(end)
      
           registros = await registros.filter(e => this.converteData(e.dataCotacao) >= start && this.converteData(e.dataCotacao) <= end)
-
-
-           console.log(registros)
+          
+          this.registros = registros
         }
        },
       async clearInput(){

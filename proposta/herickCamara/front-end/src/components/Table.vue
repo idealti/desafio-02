@@ -2,7 +2,8 @@
 <div id="table">
   <div hc-dev>
     <div>
-      <input placeholder="Buscar" type="text"><p class='search'><i >icon</i></p> 
+      <input placeholder="Buscar" type="text">
+      <img :src="require('../assets/search.png')"  alt="" srcset="" />
     </div>
     <div>
       <button>Exporta</button>
@@ -104,7 +105,9 @@
 <script>
 import '../../scss/table/table.css'
 
+
 export default {
+  components:{},
  props:{ 
    registros:"",
  },
