@@ -1,0 +1,146 @@
+:root{
+  --background-primary: rgba(0, 0, 0, 0.925);
+}
+*{
+  font-family: "RobotoMono", "monospace","sans-serif";
+}
+body{ 
+  margin:0;
+  padding: o;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+  background-color: var(--background-primary);
+}
+#app{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 77px 1fr 15px;
+  grid-template-areas:
+    "header header" 
+    "aside table"
+    "footer footer";  
+}
+header{
+  grid-area: header;
+  z-index: 2;
+}
+aside{ 
+  grid-area: aside;
+  background-color: rgba(26, 25, 25, 0.952);
+  z-index: 1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:  column;
+  box-shadow:1px 0px 10px #000;
+}
+aside div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+}
+input{
+  width: 85%;
+  font-size: 1rem;
+  padding: 3px;
+  margin:10px 0;
+  background-color: #ccc;
+  box-shadow:2px 2px 10px #000;
+  outline: none;
+}
+button{
+  overflow: hidden;
+   width:45%;
+  font-size: 1rem;
+  padding: 3px;
+  font-weight: 500;
+  background-color:rgb(104, 101, 104) ;
+  cursor: pointer;
+  box-shadow:2px 2px 10px #000;
+  outline: none;
+  transition: 2ms;
+
+}
+button:hover{
+  transition: 5ms;
+  background-color:#ccc;
+}
+div#table{
+  grid-area: table;
+  z-index: 0;
+  color: #dcdcdc;
+}
+footer{
+  grid-area: footer;
+  z-index: 2;
+background-color:#000;
+color: #f0f0f0;
+padding: 3px;
+}
+@media (max-width:950px ) {
+  #app{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 77px 50px 1fr 15px;
+  grid-template-areas:
+    "header header" 
+    "aside aside"
+    "table table"
+    "footer footer";  
+}
+aside{ 
+  width: 100%;
+  height: 50px;
+  grid-area: aside;
+  background-color: rgba(26, 25, 25, 0.952);
+  z-index: 1;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction:  row;
+  box-shadow:0px 1px 10px #000;
+
+}
+
+
+aside div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 10px;
+  width: 45%;
+}
+
+input{
+  width:47%;
+  font-size: .8rem;
+  padding: 3px;
+  background-color: #ccc;
+  box-shadow:2px 2px 10px #000;
+  outline: none;
+}
+
+button{
+  overflow: hidden;
+  width:47%;
+  font-size: .8rem;
+  padding: 3px;
+  font-weight: 500;
+  background-color:rgb(104, 101, 104) ;
+  cursor: pointer;
+  box-shadow:2px 2px 10px #000;
+  outline: none;
+  transition: 2ms;
+
+}
+}
